@@ -1,0 +1,17 @@
+{{ if eq .Site.LanguageCode "en-GB" }}
+
+{{ partial "head" . }}
+
+{{ partial "tm3kickstarter/pricing" . }}
+
+{{ partial "tm3kickstarter/forms/standard" . }}
+
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ partial "foot" . }}
+
+{{ else }}
+{{ end }}

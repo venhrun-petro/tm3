@@ -1,0 +1,498 @@
+/*  ==========================================================================
+    TYPOGRAPHY
+    ========================================================================== */
+html {
+    /* 100% = 16px */
+    /* 93.75% = 15px */
+    /* 87.5%  = 14px */
+    /* 81.25% = 13px */
+    /* 75%    = 12px */
+    /* 63.5%  = 10px */
+    font-size: 100%;
+}
+
+body {
+    font-family: $font-family-primary;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    @media (min-width: $screen-lg-min) {
+        font-size: 16px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, blockquote{
+    font-weight: normal;
+}
+
+figure{
+    figcaption{
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+
+.basic-content{
+    h2{
+        font-size: 22px;
+        line-height: 28px;
+        font-family: $font-family-primary;
+        font-weight: 300;
+        font-style: normal;
+    }
+    h3{
+        font-size: 21px;
+        line-height: 30px;
+        font-family: $font-family-primary;
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+// $font-family-primary: "usual", Helvetica, Arial, sans-serif; //usual light
+// $font-family-secondary: 'usual regular', Helvetica, Arial, sans-serif; //usual regular
+// $font-family-tertiary: 'usual medium', Helvetica, Arial, sans-serif; //usual medium
+// $font-family-quaternary: 'usual bold', Helvetica, Arial, sans-serif; //usual bold
+// $font-family-quinary: 'usual italic', Helvetica, Arial, sans-serif; //usual italic
+
+.font{
+
+    &--family{
+        &__primary{
+            //usual light
+            font-family: $font-family-primary;
+            font-weight: 300;
+            font-style: normal;
+        }
+        &__secondary{
+            //usual regular
+            font-family: $font-family-primary;
+            font-weight: 400;
+            font-style: normal;
+        }
+        &__tertiary{
+            //usual medium
+            font-family: $font-family-primary;
+            font-weight: 600;
+            font-style: normal;
+        }
+        &__quaternary{
+            //usual bold
+            font-family: $font-family-primary;
+            font-weight: 700;
+            font-style: normal;
+        }
+        &__quinary{
+            //usual italic
+            font-family: $font-family-primary;
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+    &--h1{
+        &__small{
+            //
+        }
+        &__medium{
+            //
+        }
+        &__large{
+            font-size: 19px;
+            line-height: 23px;
+            //+
+        }
+    }
+    &--h2{
+        &__small{
+            //
+        }
+        &__medium{
+            font-size: 22px;
+            line-height: 28px;
+            //+
+        }
+        &__large{
+            //
+        }
+    }
+    &--h3{
+        &__small{
+            font-size: 18px;
+            line-height: 22px;
+            //+
+        }
+        &__medium{
+            font-size: 21px;
+            line-height: 27px;
+        }
+        &__large{
+            font-size: 19px;
+            line-height: 23px;
+            //+
+        }
+    }
+    &--strapline{
+
+        &__medium{
+            font-size: 16px;
+            line-height: 21px;
+            //+
+        }
+        &__large{
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+    &--cta{
+        &__small{
+            font-size: 16px;
+            line-height: 21px;
+            //+
+        }
+        &__medium{
+            font-size: 17px;
+            line-height: 25px;
+        }
+        &__large{
+            font-size: 34px;
+            line-height: 37px;
+        }
+    }
+    &--copy{
+        &__small{
+            font-size: 16px;
+            line-height: 21px;
+            //+
+        }
+        &__medium{
+            font-size: 17px;
+            line-height: 21px;
+            //+
+        }
+        &__large{
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+    }
+    &--blockquote{
+        &__small{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__medium{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    &--extra{
+        &__small{
+            font-size: 12px;
+            line-height: 16px;
+            //+
+            &.btn{
+                line-height:28px;
+            }
+        }
+
+        &__medium{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__large{
+            font-size: 21px;
+            line-height: 37px;
+        }
+        &__xx-large{
+            font-size: 45px;
+            line-height: 60px;
+        }
+        &__xxx-large{
+            font-size: 40px;
+            line-height: 80px;
+        }
+    }
+}
+@media screen and (min-width: $screen-sm-min) {
+    .basic-content{
+        h2{
+            font-size: 30px;
+            line-height: 36px;
+            font-family: $font-family-primary;
+            font-weight: 300;
+            font-style: normal;
+        }
+        h3{
+            font-size: 21px;
+            line-height: 30px;
+            font-family: $font-family-primary;
+            font-weight: 600;
+            font-style: normal;
+        }
+    }
+    .font{
+        &--h1{
+            &__small{
+                //
+            }
+            &__medium{
+                //
+            }
+            &__large{
+                font-size: 33px;
+                line-height: 44px;
+                //+
+            }
+        }
+        &--h2{
+            &__small{
+                //
+            }
+            &__medium{
+                font-size: 30px;
+                line-height: 36px;
+                //+
+            }
+            &__large{
+                //
+            }
+        }
+        &--h3{
+            &__small{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &__medium{
+                font-size: 21px;
+                line-height: 30px;
+            }
+            &__large{
+                font-size: 27px;
+                line-height: 42px;
+                //+
+            }
+        }
+        &--strapline{
+
+            &__medium{
+                font-size: 19px;
+                line-height: 26px;
+                //+
+            }
+            &__large{
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+        &--cta{
+            &__small{
+                font-size: 19px;
+                line-height: 28px;
+            }
+            &__medium{
+                font-size: 26px;
+                line-height: 26px;
+            }
+            &__large{
+                font-size: 34px;
+                line-height: 37px;
+            }
+        }
+        &--copy{
+            &__small{
+                font-size: 16px;
+                line-height: 24px;
+                //+
+            }
+            &__medium{
+                font-size: 17px;
+                line-height: 25px;
+                //+
+            }
+            &__large{
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+        }
+        &--blockquote{
+            &__small{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &__medium{
+                font-size: 24px;
+                line-height: 31px;
+                //+
+            }
+        }
+        &--extra{
+            &__small{
+                font-size: 14px;
+                line-height: 18px;
+                //+
+                &.btn{
+                    line-height:28px;
+                }
+            }
+            &__medium{
+                font-size: 16px;
+                line-height: 22px;
+            }
+            &__large{
+                font-size: 21px;
+                line-height: 37px;
+            }
+            &__xx-large{
+                font-size: 60px;
+                line-height: 60px;
+            }
+            &__xxx-large{
+                font-size: 60px;
+                line-height: 80px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $screen-md-min) {
+    .basic-content{
+        h2{
+            font-size: 38px;
+            line-height: 47px;
+            font-family: $font-family-primary;
+            font-weight: 300;
+            font-style: normal;
+        }
+        h3{
+            font-size: 21px;
+            line-height: 30px;
+            font-family: $font-family-primary;
+            font-weight: 600;
+            font-style: normal;
+        }
+    }
+    .font{
+        &--h1{
+            &__small{
+                //
+            }
+            &__medium{
+                //
+            }
+            &__large{
+                font-size: 38px;
+                line-height: 51px;
+            }
+        }
+        &--h2{
+            &__small{
+                //
+            }
+            &__medium{
+                font-size: 38px;
+                line-height: 47px;
+            }
+            &__large{
+                //
+            }
+        }
+        &--h3{
+            &__small{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &__medium{
+                font-size: 21px;
+                line-height: 30px;
+            }
+            &__large{
+                font-size: 27px;
+                line-height: 42px;
+            }
+        }
+        &--strapline{
+
+            &__medium{
+                font-size: 19px;
+                line-height: 26px;
+            }
+            &__large{
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+        &--cta{
+            &__small{
+                font-size: 19px;
+                line-height: 28px;
+            }
+            &__medium{
+                font-size: 26px;
+                line-height: 26px;
+            }
+            &__large{
+                font-size: 34px;
+                line-height: 37px;
+            }
+        }
+        &--copy{
+            &__small{
+                font-size: 16px;
+                line-height: 28px;
+            }
+            &__medium{
+                font-size: 17px;
+                line-height: 25px;
+            }
+            &__large{
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+        }
+        &--blockquote{
+            &__small{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &__medium{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        &--extra{
+            &__small{
+                font-size: 13px;
+                line-height: 20px;
+            }
+            &__medium{
+                font-size: 16px;
+                line-height: 22px;
+            }
+            &__large{
+                font-size: 21px;
+                line-height: 37px;
+            }
+            &__xx-large{
+                font-size: 45px;
+                line-height: 60px;
+            }
+            &__xxx-large{
+                font-size: 60px;
+                line-height: 80px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $screen-lg-min) {
+    .font{
+        &--extra{
+            &__xx-large{
+                font-size: 60px;
+                line-height: 60px;
+            }
+        }
+    }
+}

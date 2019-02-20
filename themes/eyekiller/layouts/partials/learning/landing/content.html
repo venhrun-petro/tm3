@@ -1,0 +1,51 @@
+<div class="wrapper background__white spacing--padding-top__xx-large">
+		<div class="wrapper__inner">
+			<div class="cols-2-spec wrapper spacing--padding-bottom__xxx-large">
+				<div class="cols-2-spec__1 spacing--padding-bottom__medium">
+				<div class="wrapper wrapper__bordered wrapper__contain">
+					<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__small">Getting Started</h2>
+					<p class="font--copy__medium color__tertiary spacing--padding-bottom__medium">TM3 provides you with the resources to hit the ground running. Before you get started, you’ll be assigned a dedicated implementation buddy to help streamline the process</p>
+					<a href="/learning/getting-started/" title="" class="font--extra__small btn btn__tertiary">LEARN HOW TO GET SET UP</a>
+				</div>
+				</div><!--
+				--><div class="cols-2-spec__1 ">
+					<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__x-small">Training</h2>
+				<p class="font--copy__medium color__tertiary spacing--padding-bottom__medium">TM3 has a wealth of training resources, from webinars to group training, to help enhance your experience with our private practice software.</p>
+				<a href="/learning/training/" title="" class="color__primary font--extra__small font--family__tertiary">SEE TRAINING OPTIONS</a>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+<div class="wrapper background__white spacing--padding-top__xxx-large">
+		<div class="wrapper wrapper__inner ">
+			<div class="wrapper">
+				<div class="cols-3 cols-2 spacing--padding-bottom__medium">
+					<div class="cols-3__1 spacing--padding-bottom__xx-large">
+						<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__large">Catch up with company news and industry related posts</h2>
+						<a href="/learning/inside-tm3-blog/" title="" class="font--extra__small btn btn__tertiary">VIEW OUR BLOG POSTS</a>
+				</div><!--
+				--><div class="cols-3__2 cols-2"><!--
+					-->{{ range  first 2 ( where  .Site.Pages "Section" "blog" ) }}<div class="cols-2__1-1  spacing--padding-bottom__xx-large">
+						<div class=""><a href="/{{ .URL }}" title=""><img src="{{ .Params.thumbnail }}" alt="TM3 blog thumbnails" /></a></div>
+							<a href="/{{ .URL }}" title=""><h3 class="color__secondary font--family__tertiary font--h3__small spacing--padding-top__medium">{{ .Title }}</h3></a>
+						<p class="color__tertiary font--family__primary font--copy__medium">{{ .Params.blurb}}</p>
+						<span class="color__secondary font--family__primary font--copy__medium">Posted {{ .Date.Format "2 January 2006" }} in {{ range  .Params.categories  }}<span class="work-around-comma">, </span><a href="/learning/inside-tm3-blog/category/{{ . | urlize }}" class="color__secondary"> {{ . }}</a>{{ end }}</span>
+					</div>{{ end }}<!--
+				--></div>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+<div class="wrapper background__senary">
+			<div class="wrapper wrapper__inner spacing--padding-top__xxxx-large spacing--padding-bottom__xxxx-large">
+				<div class="max--width__headline centered margin__default">
+					<h1 class="font--family__primary color__secondary font--h2__medium spacing--padding-bottom__small">Industry Partners</h1>
+					<p class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__medium">TM3 partners with distinguished organisations and companies within the {{ i18n "msk" }} industry, providing you credible private practice software.</p>
+					<a href="/learning/industry-partners/" title="" class="font--extra__small btn btn__tertiary">LEARN ABOUT OUR PARTNERS</a>
+				</div>
+			</div>
+	</div>

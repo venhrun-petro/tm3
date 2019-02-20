@@ -1,0 +1,33 @@
+/*  Placeholder
+    ========================================================================== */
+::-webkit-input-placeholder {
+    color: #343434;
+    opacity: 0.6;
+    @include transition(opacity 0.15s ease);
+}
+:focus::-webkit-input-placeholder {
+    opacity: 0.4;
+}
+::-moz-placeholder {
+    color: #343434;
+    opacity: 0.6;
+}
+:focus::-moz-placeholder {
+    opacity: 0.4;
+}
+::-moz-placeholder {
+    color: #343434;
+    opacity: 0.6;
+}
+:focus::-moz-placeholder {
+    opacity: 0.4;
+}
+:-ms-input-placeholder  {
+    color: #343434;
+}
+:focus:-ms-input-placeholder  {
+    opacity: 0.4;
+}
+.placeholder {
+    color: #343434;
+}

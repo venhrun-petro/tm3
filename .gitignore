@@ -1,0 +1,4 @@
+hugo.exe
+public
+*.orig
+node_modules

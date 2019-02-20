@@ -1,0 +1,54 @@
+/*  ==========================================================================
+    VARIABLES
+    ========================================================================== */
+
+// Typography
+$font-family-base: "usual", Helvetica, Arial, sans-serif;
+$font-size-base: 14px;
+
+$font-family-primary: "usual", Helvetica, Arial, sans-serif; //usual light
+// $font-family-secondary: 'usual regular', Helvetica, Arial, sans-serif; //usual regular
+// $font-family-tertiary: 'usual medium', Helvetica, Arial, sans-serif; //usual medium
+// $font-family-quaternary: 'usual bold', Helvetica, Arial, sans-serif; //usual bold
+// $font-family-quinary: 'usual italic', Helvetica, Arial, sans-serif; //usual italic
+
+// Colours
+
+$brand-color-primary: #16B9FF; // blue used in cta
+$brand-color-orange: #ff7f50; // orange used in cta
+$brand-color-secondary: #323F4D;  // dark blue used in header
+$brand-color-tertiary: #677789; // dark blue used in copy
+$brand-color-quaternary: #556270; //dark blue used in background
+$brand-color-quinary: #BFBFBF; // grey used in footer
+$brand-color-senary: #F8FCFE; // light blue used in background
+$brand-color-septenary: #DEDEDE; //light grey used as hr
+$brand-color-octonary: #BCC3CC; //light grey blue used as border
+$brand-color-nonary: #D0021B; //red used in error messages
+$brand-color-denary: #F6F9FA; //off white used in sidebar blockquote
+$brand-color-white: #FFFFFF;
+
+
+// Breakpoints
+$screen-xsm-max: 480px;
+$screen-xsm-min: 481px;
+$screen-sm-max: 600px;
+$screen-sm-min: 601px;
+$screen-md-max: 1080px;
+$screen-md-min: 1081px;
+$screen-lg-max: 1250px;
+$screen-lg-min: 1251px;
+$screen-x-lg-max: 1360px;
+$screen-x-lg-min: 1361px;
+$screen-xx-lg-max: 1440px;
+$screen-xx-lg-min: 1441px;
+$screen-xxx-lg-max: 1800px;
+$screen-xxx-lg-min: 1801px;
+
+
+// SVG
+$icons__accordian: "../images/tm3-accordian-icons.svg";
+$icons__images: "../images/tm3-icons-images.svg";
+$icons__logo: "../images/tm3-logos.svg";
+$icons__social: "../images/tm3-social-icons.svg";
+$icons__various: "../images/tm3-various-icons.svg";
+

@@ -1,0 +1,13 @@
+{{ if eq .Site.LanguageCode "en-GB" }}
+
+  {{ partial "about-us/our-story/top.html" . }}
+
+{{ else }}
+
+  {{ partial "about-us/our-story/topau.html" . }}
+
+{{ end }}
+
+{{ partial "about-us/our-story/content.html" . }}
+
+{{ partial "about-us/our-story/bottom.html" . }}

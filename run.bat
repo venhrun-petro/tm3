@@ -1,0 +1,2 @@
+hugo-duncan server
+pause

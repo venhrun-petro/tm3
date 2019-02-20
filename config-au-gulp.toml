@@ -1,0 +1,8 @@
+languageCode = "en-AU"
+title = "TM3"
+theme = "eyekiller"
+baseURL = "/au"
+relativeURLs = "yes"
+
+[languages]
+[languages.en-AU]

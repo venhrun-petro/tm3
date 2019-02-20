@@ -1,0 +1,29 @@
+{{ partial "head" . }}
+
+<body>
+
+	<div class="video-wrapper">
+		<div class="video-popup">
+			<div class="video-wrapper__close"></div>
+			<iframe frameborder='0' height='465px' width='470px' scrolling='no' src='' frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	{{ partial "navigation"  (dict "logo" "white") }}
+	<div class="wrapper wrapper__master">
+	    <div class="wrapper wrapper__headline__medium" style="background-image:url('{{ .Params.banner }}'); background-repeat:no-repeat; background-position: center center; background-size: cover;">
+	    	<div class="wrapper__headline__blue"></div>
+	        <div class="wrapper wrapper__inner centered__vertical ">
+	        	<div class="max--width__headline--top  centered margin__default">
+	        		<h1 class="color__white font--family__secondary font--h2__medium">{{ .Title}}</h1>
+	        		<p class="color__white font--family__primary font--strapline__medium"> {{ .Params.blurb }}</p>
+	        	</div>
+	        </div>
+	    </div>
+
+	   <div class="wrapper background__white spacing--padding-top__large">
+		    <div class="wrapper__inner">
+		    	<ul class="link__breadcrumbs">
+		    		<li class="display__inline "><a href="/success-stories" title="" class="display__inline color__secondary font--extra__small font--family__tertiary">SUCCESS STORIES</a></li><span class="display__inline color__primary font--extra__small font--family__tertiary">|</span><li class="display__inline display__inline color__secondary font--extra__small font--family__tertiary">{{ .Title | upper }}</li>
+		    	</ul>
+		    </div>
+		</div>

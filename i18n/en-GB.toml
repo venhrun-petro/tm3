@@ -1,0 +1,34 @@
+[msk]
+other = "MSK"
+
+[nationality]
+other = "UK"
+
+[location]
+other = "the UK"
+
+# sales contact info
+[salesemail]
+other = "enquiries@tm3pm.com"
+
+[salesmailto]
+other = "mailto:enquiries@tm3pm.com"
+
+[phone]
+other = "03333 442 600"
+
+[tel]
+other = "tel:03333442600"
+
+#support contact info
+[supportemail]
+other = "support@tm3pm.com"
+
+[supportmailto]
+other = "mailto:support@tm3pm.com"
+
+[supportphone]
+other = "03333 442 800"
+
+[supporttel]
+other = "tel:03333442800"

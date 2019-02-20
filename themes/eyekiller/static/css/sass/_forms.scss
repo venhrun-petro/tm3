@@ -1,0 +1,189 @@
+/*  ==========================================================================
+    FORMS
+    ========================================================================== */
+/*  Basic form styles
+    ========================================================================== */
+.field-wrapper {
+    margin-bottom: 10px;
+}
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel'],
+input[type='search'],
+input[type='password'],
+textarea,
+select {
+    font-family: $font-family-base;
+    font-size: 16px;
+    color: #666;
+    height: 40px;
+    padding: 2px 10px;
+    border-color: #dce4ec;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @include border-radius(0);
+    @include transition(border-color 0.15s ease);
+}
+/* START: Select box styling */
+span.select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    div{
+        height:40px;
+    }
+    &::-ms-expand {
+        display: none; /* Removes select box arrow in IE10+ */
+    }
+}
+
+span.select {
+    position: relative;
+    background-color: white;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        z-index: 1;
+        width: 15px;
+        height: 20px;
+        background: url() no-repeat;
+        background-position:0 -845px;
+        pointer-events: none;
+    }
+}
+/* END: Select box styling */
+label {
+    display: block;
+}
+.rad-chk-input {
+    margin: 5px 0;
+    @media (min-width: $screen-md-min) {
+        display: inline;
+        margin: 0;
+    }
+}
+input[type='checkbox'] + label,
+input[type='radio'] + label {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=search],
+textarea,
+select {
+    &:hover {
+        border-color: #aaa;
+    }
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=search],
+textarea,
+select  {
+    &:focus {
+        border-color: #3498db;
+    }
+}
+/*  Config Form
+    ========================================================================== */
+
+.select{
+    &__dual{
+        background-color: $brand-color-white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $brand-color-secondary;
+        font-size: 26px;
+        line-height: 28px;
+        font-family: $font-family-primary;
+        font-weight: 600;
+        font-style: normal;
+        width: 65px;
+        height: 50px;
+        @include border-radius(4px);
+        &-wrap{
+            position: relative;
+            select{
+                background-image: url($icons__various);
+                background-repeat: no-repeat;
+                background-position: 31px -475px;
+            }
+        }
+    }
+}
+
+.check{
+    &__button-text{
+        background-color: $brand-color-white;
+        width: auto;
+        display: inline-block;
+        @include border-radius(4px);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid $brand-color-septenary;
+        color: $brand-color-primary;
+        margin: 0 10px;
+        font-family: $font-family-primary;
+        font-weight: 600;
+        font-style: normal;
+        &--active{
+            background-color: $brand-color-primary;
+            border: 1px solid $brand-color-primary;
+            color: $brand-color-white;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+    }
+}
+
+.form{
+    &__small, &__sidebar, &__contact{
+        color: $brand-color-septenary;
+        input[type="text"], input[type="email"], input[type="password"], select, textarea{
+            width: 100%;
+            border: 1px solid $brand-color-octonary;
+            @include border-radius(4px);
+
+        }
+        .select{
+            &:after{
+                content: "";
+                position: absolute;
+                top: 0px;
+                right: 10px;
+                width: 20px;
+                height: 50px;
+                background-image: url($icons__various);
+                background-repeat: no-repeat;
+                background-position: -9px -78px;
+            }
+        }
+        select{
+            background-color: $brand-color-white;
+            padding-right: 30px;
+        }
+        textarea{
+            padding: 10px;
+            min-height: 150px;
+        }
+        input[type="submit"]{
+            @include border-radius(100px);
+            border: 2px solid $brand-color-primary;
+        }
+    }
+}

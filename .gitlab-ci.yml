@@ -1,0 +1,65 @@
+variables:
+  VERSION: "0.0.1"
+  AZURE_REGISTRY: "bluezinc.azurecr.io"
+  DH_REGISTRY: "git.tm2app.local:4567"
+  KUBECONFIG: "/home/gitlab-runner/.kube/config"
+
+stages:
+  - build
+  - deploy
+
+build_image:
+  stage: build
+  script:
+    - PADDED_ID="$(printf "%04d\n" $CI_PIPELINE_IID)"
+    - echo export PADDED_ID="$(echo $PADDED_ID)" >> variables
+    - source variables
+    - hugo --config="config.toml"
+    - docker login $AZURE_REGISTRY -u bluezinc -p $AZURE_REGISTRY_PASSWORD
+    - docker build -t $AZURE_REGISTRY/$CI_PROJECT_PATH:$VERSION-$PADDED_ID .
+    - docker push $AZURE_REGISTRY/$CI_PROJECT_PATH:$VERSION-$PADDED_ID
+  artifacts:
+    paths:
+      - variables
+    expire_in: 1 week
+  only:
+   - master
+  tags:
+   - hugo
+
+build_image_oz:
+  stage: build
+  script:
+    - PADDED_ID="$(printf "%04d\n" $CI_PIPELINE_IID)"
+    - echo export PADDED_ID="$(echo $PADDED_ID)" >> variables
+    - source variables
+    - hugo --config="config-au.toml"
+    - docker login $AZURE_REGISTRY -u bluezinc -p $AZURE_REGISTRY_PASSWORD
+    - docker build -t $AZURE_REGISTRY/$CI_PROJECT_PATH/oz:$VERSION-$PADDED_ID .
+    - docker push $AZURE_REGISTRY/$CI_PROJECT_PATH/oz:$VERSION-$PADDED_ID
+  artifacts:
+    paths:
+      - variables
+    expire_in: 1 week
+  only:
+   - master
+  tags:
+   - hugo
+
+create_octopus_release:
+  stage: deploy
+  script:
+    - source variables
+    - chmod u+x octopus-release.sh
+    - ./octopus-release.sh Projects-141 $VERSION-$PADDED_ID "$CI_COMMIT_MESSAGE"
+  only:
+   - master
+
+create_octopus_release_oz:
+  stage: deploy
+  script:
+    - source variables
+    - chmod u+x octopus-release.sh
+    - ./octopus-release.sh Projects-70 $VERSION-$PADDED_ID "$CI_COMMIT_MESSAGE"
+  only:
+   - master

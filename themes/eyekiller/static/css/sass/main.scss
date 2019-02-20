@@ -1,0 +1,28 @@
+// Core variables and mixins
+@import 'variables';
+@import 'mixins';
+
+// Reset and dependencies
+@import 'normalize';
+
+// Components
+@import 'typography';
+@import 'circle';
+@import 'flexslider';
+@import 'forms';
+@import 'placeholders';
+@import 'nav';
+@import 'tables';
+@import 'buttons';
+@import 'alerts';
+@import 'header';
+@import 'footer';
+@import 'base';
+@import 'print';
+@import 'fallbacks';
+@import 'pozitiff';
+
+.bookademobutton {
+	margin-right: 5%;
+	padding-top: 10px;
+}

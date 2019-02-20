@@ -1,0 +1,36 @@
+<div class="wrapper background__white spacing--padding-top__small">
+		<div class="wrapper__inner">
+			<div class="cols-3 wrapper spacing--padding-bottom__xxx-large">
+				<div class="cols-3__2">
+					<div class="color__secondary font--family__primary font--copy__large basic-content">
+						{{ .Content }}
+					</div>
+
+
+				</div><!--
+				--><div class="cols-3__1">
+					<div class="wrapper wrapper__contain background__denary">
+						<blockquote class="centered font--family__quinary font--blockquote__small color__secondary">{{ .Params.quote }}</blockquote>
+						<div class="spacing--padding-top__medium centered">
+							<span class="color__secondary font--family__tertiary font--h3__small">{{ .Params.fullname }}</span>
+							<span class="color__secondary font--family__tertiary font--h3__small">{{ .Params.occupation }}</span>
+						</div>
+					</div><!--
+					--><div class="cols-1 spacing--padding-top__x-large spacing--padding-bottom__medium">
+						<h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-top__medium">Read more success stories</h3>
+					</div>
+					<div class="cols-1"><!--
+						-->{{ $page_link := .Permalink }}{{ $tags := .Params.categories }}{{ range first 4 ( where  .Site.Pages "Section" "articles" )}}{{ $page := . }}{{ $has_common_tags := intersect $tags .Params.categories | len | lt 0 }}{{ if and $has_common_tags (ne $page_link $page.Permalink) }}<div class="cols-1__2 spacing--padding-bottom__xx-large">
+						<div class=""><a href="/{{ $page.URL }}" title=""><img src="{{ $page.Params.thumbnail }}" alt="{{ $page.Params.forename | upper}}" /></a></div>
+							<a href="/{{ $page.URL }}" title=""><h4 class="color__secondary font--family__tertiary font--h3__small spacing--padding-top__medium">{{ $page.Params.fullname }}, {{ $page.Params.occupation }} </h4></a>
+						<p class="color__tertiary font--family__primary font--copy__medium">{{ $page.Params.blurb}}</p>
+						<a href="/{{ $page.URL }}" title="" class="color__primary font--family__tertiary font--extra__small link__underline__primary__thick--hover">READ {{ $page.Params.forename | upper}}'S STORY</a>
+					</div>{{ end }}{{ end }}<!--
+				--></div>
+
+
+
+				</div>
+			</div>
+		</div>
+</div>

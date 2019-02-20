@@ -1,0 +1,14 @@
+<div class="wrapper spacing--padding-top__medium">
+		    <div class="wrapper__inner  centered">
+		    	<div class="wrapper background__senary">
+		    		<p class="spacing--padding-top__small spacing--padding-bottom__small font--family__secondary font--extra__large color__">
+		    			<h1 class="color__primary font--family__secondary font--h2__medium">Attention Single Practitioners</h1> 
+		    			<br><span class="color__secondary font--family__quaternary font--extra__large">Enjoy TM3 + Online Bookings + Access To The Pronto Network + E-learning for:</span></br> 
+		    			<span class="color__orange font--family__quaternary font--cta__large">£50
+		    			</span></p>
+		    			<div class="color__white font--cta__medium font--family__secondary spacing--padding-bottom__large">
+			    		<a href="/single-practitioner/" title="Find Out More" class="font--family__tertiary font--extra__small btn btn__orange">FIND OUT MORE</a>
+			    		</div>
+			    </div>
+		    </div>
+		</div>

@@ -1,0 +1,28 @@
+<svg id="icon_intuitiveclinicalnotes" xmlns="http://www.w3.org/2000/svg" width="68" height="90" viewBox="0 0 68 90">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #3295d8;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Path_5749" data-name="Path 5749" class="cls-1" d="M6.133,0H44.319L68,23.709v60.14a6.168,6.168,0,0,1-1.8,4.34l-.011.011A6.108,6.108,0,0,1,61.856,90H6.133A6.154,6.154,0,0,1,1.8,88.2,6.215,6.215,0,0,1,0,83.849V6.14A6.142,6.142,0,0,1,6.133,0ZM42.984,3.236H6.133a2.92,2.92,0,0,0-2.9,2.9V83.849a2.939,2.939,0,0,0,2.912,2.915H61.867a2.939,2.939,0,0,0,2.052-.85,2.9,2.9,0,0,0,.849-2.054V25.045L42.984,3.236Z" transform="translate(0)"/>
+  <path id="Path_5750" data-name="Path 5750" class="cls-1" d="M60.66,23.85H43.41a5.582,5.582,0,0,1-5.57-5.56V1.31h2.93V18.29a2.663,2.663,0,0,0,2.64,2.64H60.66v2.92Z" transform="translate(5.35 1)"/>
+  <path id="Path_5751" data-name="Path 5751" class="cls-2" d="M13.32,19.92h3.99v4H13.32Z" transform="translate(1.467 2.185)"/>
+  <path id="Path_5752" data-name="Path 5752" class="cls-2" d="M45.77,48.83h3.99v3.99H45.77Z" transform="translate(5.041 5.355)"/>
+  <path id="Path_5753" data-name="Path 5753" class="cls-2" d="M13.32,39.46h3.99v3.99H13.32Z" transform="translate(1.467 4.327)"/>
+  <path id="Path_5754" data-name="Path 5754" class="cls-2" d="M20.35,19.92h3.99v4H20.35Z" transform="translate(2.241 2.185)"/>
+  <path id="Path_5755" data-name="Path 5755" class="cls-2" d="M38.74,48.83h3.99v3.99H38.74Z" transform="translate(4.266 5.355)"/>
+  <path id="Path_5756" data-name="Path 5756" class="cls-2" d="M45.77,30.08h3.99v4H45.77Z" transform="translate(5.041 3.299)"/>
+  <path id="Path_5757" data-name="Path 5757" class="cls-2" d="M25.27,30.08h3.99v4H25.27Z" transform="translate(2.783 3.299)"/>
+  <path id="Path_5758" data-name="Path 5758" class="cls-1" d="M13.32,31.15h8.33v2.93H13.32Z" transform="translate(1.586 3.37)"/>
+  <path id="Path_5759" data-name="Path 5759" class="cls-1" d="M32.85,31.15h9.76v2.93H32.85Z" transform="translate(4.02 3.37)"/>
+  <path id="Path_5760" data-name="Path 5760" class="cls-1" d="M13.32,49.89H35.06v2.93H13.32Z" transform="translate(2.119 5.397)"/>
+  <path id="Path_5761" data-name="Path 5761" class="cls-1" d="M21.03,40.52H35.06v2.93H21.03Z" transform="translate(2.804 4.384)"/>
+  <path id="Path_5762" data-name="Path 5762" class="cls-1" d="M38.39,40.52H49.76v2.93H38.39Z" transform="translate(4.848 4.384)"/>
+  <path id="Path_5763" data-name="Path 5763" class="cls-1" d="M13.32,59.31H49.76v5.85H13.32Z" transform="translate(3.355 6.664)"/>
+</svg>

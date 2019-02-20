@@ -1,0 +1,34 @@
+[msk]
+other = "Allied Health"
+
+[nationality]
+other = "Australian"
+
+[location]
+other = "Australia"
+
+# sales contact info
+[salesemail]
+other = "sales@tm3pm.com.au"
+
+[salesmailto]
+other = "mailto:sales@tm3pm.com.au"
+
+[phone]
+other = "1300 855 023"
+
+[tel]
+other = "tel:1300855023"
+
+#support contact info
+[supportemail]
+other = "support@tm3pm.com.au"
+
+[supportmailto]
+other = "mailto:support@tm3pm.com.au"
+
+[supportphone]
+other = "1300 855 023"
+
+[supporttel]
+other = "tel:1300855023"

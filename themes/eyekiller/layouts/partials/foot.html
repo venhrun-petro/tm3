@@ -1,0 +1,89 @@
+      {{ partial "base/footer" . }}
+    {{ partial "base/scripts" . }}
+<script>
+var myVar = setInterval(function(){ googlead() }, 1000);
+function googlead()
+{
+if(jQuery('#thank-you').attr('class') != 'hidden' )
+{
+jQuery('body').append('<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1070605232/?value=30.00&amp;currency_code=GBP&amp;label=tKJwCI2y0WUQsMfA_gM&amp;guid=ON&amp;script=0"/>') 
+clearInterval(myVar);
+}
+}
+</script>
+
+<script>
+var timeInt = setInterval(function(){
+if(window.location.pathname == "/book-a-demo/" && jQuery('#thank-you').is(':visible'))
+{
+ga('send','event','form','submit','book a demo');
+clearInterval(timeInt);
+}
+},1000)
+window.addEventListener('load',function(){
+jQuery('[class="reckoner select__dual"]').click(function(){
+ga('send','event','select list','click','practitioner diaries');
+});
+
+jQuery('[href="/book-a-demo/"],[href="/book-a-demo"]').click(function(){
+ga('send','event','button','click',window.location.pathname);
+});
+
+jQuery('#calc-form [href="/book-a-demo/"]').click(function(){
+ga('send','event','button','click','pricing book a demo');
+})
+
+jQuery('[href="https://player.vimeo.com/video/161932442"]').click(function(){
+ga('send','event','button','click','watch video');
+});
+
+jQuery('.play-video').click(function(){
+ga('send','event','button','click','play video');
+});
+});
+</script>
+<script>
+var timeInt = setInterval(function(){
+if(window.location.pathname == "/contact-us/" && jQuery('#thank-you').is(':visible'))
+{
+ga('send','event','form','submit','contact us');
+clearInterval(timeInt);
+}
+if(window.location.pathname == "/learning/training/" && jQuery('#thank-you').is(':visible'))
+{
+ga('send','event','form','submit','training');
+clearInterval(timeInt);
+}
+},1000);
+</script>
+
+<!-- ActiveCampaign -->
+<script type="text/javascript">
+	var trackcmp_email = '';
+	var trackcmp = document.createElement("script");
+	trackcmp.async = true;
+	trackcmp.type = 'text/javascript';
+	trackcmp.src = '//trackcmp.net/visit?actid=475256527&e='+encodeURIComponent(trackcmp_email)+'&r='+encodeURIComponent(document.referrer)+'&u='+encodeURIComponent(window.location.href);
+	var trackcmp_s = document.getElementsByTagName("script");
+	if (trackcmp_s.length) {
+		trackcmp_s[0].parentNode.appendChild(trackcmp);
+	} else {
+		var trackcmp_h = document.getElementsByTagName("head");
+		trackcmp_h.length && trackcmp_h[0].appendChild(trackcmp);
+	}
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nvek9');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+ </body>
+
+</html>

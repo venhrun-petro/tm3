@@ -1,0 +1,61 @@
+{{ partial "head" . }}
+<body class="permanent">
+	<div class="video-wrapper">
+		<div class="video-popup">
+			<div class="video-wrapper__close"></div>
+			<iframe frameborder='0' height='465px' width='470px' scrolling='no' src='' frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="menu-popup">
+		<div class="menu-popup__wrapper">
+			<div class="cols-1">
+				<span class="menu-popup__close font--family__tertiary color__secondary font--extra__small">CLOSE MENU</span>
+			</div>
+			<div class="cols-1 ">
+			<div class="text-left">
+				<nav class="font--cta__small font--family__tertiary spacing--padding-bottom__large wrapper__border-bottom">
+					<a href="/why-tm3" title="" class="color__secondary display__block spacing--padding-bottom__small">Why TM3</a>
+					<a href="/tour" title="" class="color__secondary display__block spacing--padding-bottom__small">Tour</a>
+					<a href="/success-stories" title="" class="color__secondary display__block spacing--padding-bottom__small">Success Stories</a>
+					<a href="/pricing" title="" class="color__secondary display__block spacing--padding-bottom__small">Pricing</a>
+					<a href="/learning" title="" class="color__secondary display__block spacing--padding-bottom__medium">Learning</a>
+					<a href="/book-a-demo" title="" class="font--extra__small btn btn__primary">BOOK A DEMO</a>
+				</nav>
+			</div>
+		 </div>
+		</div>
+	</div>
+	<div class="tool__nav  spacing--padding-top__medium">
+	    <div class="wrapper wrapper__max">
+	        <div class="wrapper__inner text-right">
+				<div class=" display__inline__bottom">
+					<nav class="sub font--extra__small font--family__secondary  ">
+
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header id="header" class="spacing--padding-bottom__large header__closed">
+	    <div class="wrapper wrapper__max">
+	        <div class="wrapper__inner ">
+				<a href="/" title="Back to Homepage" class="bth"><div id="logo__blue" class="display__inline__bottom" ></div></a><!--
+				--><div class="header__navigation display__inline__bottom">
+					<nav class="main font--cta__small font--family__tertiary">
+						<ul class="icon__contact">
+	        				<li class="icon__contact__phone spacing--padding-top__medium text-left">
+	        					<span class="display__block font--family__tertiary font--h3__small color__secondary">Call Us</span>
+	        					<a href="{{ i18n "tel" | safeURL }}" class="font--family__secondary font--h3__small color__secondary">{{ i18n "phone" }}</a>
+	        				</li>
+	        				<li class="icon__contact__email spacing--padding-top__medium text-left">
+	        					<span class="display__block font--family__tertiary font--h3__small color__secondary">Email Us</span>
+	        					<a href={{ i18n "salesmailto" | safeHTMLAttr }} title="" class="font--family__secondary font--h3__small color__secondary">{{ i18n "salesemail" }}</a>
+	        				</li>
+	        			</ul>
+						<a href="" title="" class="font--extra__small color__white responsive__menu">MENU</a>
+ 					</nav>
+				</div>
+			</div>
+		</div>
+	</header>

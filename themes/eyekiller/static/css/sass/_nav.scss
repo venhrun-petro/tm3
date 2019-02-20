@@ -1,0 +1,30 @@
+/*  ==========================================================================
+    NAVIGATION
+    ==========================================================================  */
+
+nav{
+	&.sub{
+		a{
+			margin-left: 10px;
+			&:first-of-type{
+				margin-left: 0px;
+			}
+		}
+	}
+	&.main{
+		a{
+			margin-left: 20px;
+			&:first-of-type{
+				margin-left: 0px;
+			}
+		}
+	}
+	&.subpage{
+		a{
+			position: relative;
+			&:hover{
+				color: $brand-color-primary;
+			}
+		}
+	}
+}

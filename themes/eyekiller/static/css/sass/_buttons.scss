@@ -1,0 +1,263 @@
+/*  ==========================================================================
+    BUTTONS
+    ==========================================================================  */
+.btn {
+    min-height: 40px;
+    padding: 5px 23px;
+    font-weight: normal;
+    font-family: $font-family-primary;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    @include border-radius(100px);
+    @include user-select(100px);
+    border-width: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    
+    &__primary {
+        color: $brand-color-white;
+        background-color: $brand-color-primary;
+        border: 2px solid $brand-color-primary;
+        &:hover,
+        &:focus {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+        }
+        &:active {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+        }
+        &.disabled {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+            cursor: default;
+        }
+    }
+
+    &__orange {
+        color: $brand-color-white;
+        background-color: $brand-color-white;
+        border: 2px solid $brand-color-orange;
+        &:hover,
+        &:focus {
+            color: $brand-color-orange;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-orange;
+        }
+        &:active {
+            color: $brand-color-orange;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-orange;
+        }
+        &.disabled {
+            color: $brand-color-orange;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-orange;
+            cursor: default;
+        }
+    }
+
+    &__secondary{
+        color: $brand-color-secondary;
+        background-color: $brand-color-white;
+        border: px solid $brand-color-white;
+        &:hover,
+        &:focus {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+        }
+        &:active {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+        }
+        &.disabled {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+            cursor: default;
+        }
+    }
+
+    &__tertiary {
+        color: $brand-color-white;
+        background-color: $brand-color-primary;
+        border: 2px solid $brand-color-primary;
+        &:hover,
+        &:focus {
+            color: $brand-color-primary;
+            background-color: transparent;
+            border: 2px solid $brand-color-primary;
+        }
+        &:active {
+            color: $brand-color-primary;
+            background-color: transparent;
+            border: 2px solid $brand-color-primary;
+        }
+        &.disabled {
+            color: $brand-color-primary;
+            background-color: transparent;
+            border: 2px solid $brand-color-primary;
+            cursor: default;
+        }
+    }
+
+    &__ghost{
+        color: $brand-color-white;
+        border: 2px solid $brand-color-white;
+        &:hover,
+        &:focus {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+        }
+        &:active {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+        }
+        &.disabled {
+            color: $brand-color-primary;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-white;
+            cursor: default;
+        }
+    }
+
+    &__transparent{
+        color: $brand-color-white;
+        border: 2px solid transparent;
+        &:hover,
+        &:focus {
+            color: $brand-color-white;
+            background-color: $brand-color-primary;
+            border: 2px solid $brand-color-white;
+        }
+        &:active {
+            color: $brand-color-white;
+            background-color: $brand-color-primary;
+            border: 2px solid $brand-color-white;
+        }
+        &.disabled {
+            color: $brand-color-white;
+            background-color: $brand-color-primary;
+            border: 2px solid $brand-color-white;
+            cursor: default;
+        }
+    }
+
+    &__watch{
+        background-image: url($icons__various);
+        background-position: 0px -257px;
+        background-repeat: no-repeat;
+        min-height: 45px;
+        padding: 8px 24px;
+        padding-left: 65px;
+        margin-right: 10px;
+        &:hover,
+        &:focus {
+            border: 2px solid $brand-color-primary;
+        }
+        &:active {
+            border: 2px solid $brand-color-primary;
+        }
+        &.disabled {
+            border: 2px solid $brand-color-primary;
+            cursor: default;
+        }
+    }
+
+    &__orangewhite {
+        color: $brand-color-orange;
+        background-color: $brand-color-white;
+        border: 2px solid $brand-color-orange;
+        &:hover,
+        &:focus {
+            color: $brand-color-orange;
+            background-color: $brand-color-oran;
+            border: 2px solid $brand-color-orange;
+        }
+        &:active {
+            color: $brand-color-orange;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-orange;
+        }
+        &.disabled {
+            color: $brand-color-orange;
+            background-color: $brand-color-white;
+            border: 2px solid $brand-color-orange;
+            cursor: default;
+        }
+    }
+
+    &__white{
+        color: $brand-color-primary;
+        background: $brand-color-white;
+        border: 2px solid $brand-color-white;
+        &:hover,
+        &:focus {
+            color: $brand-color-white;
+            background-color: $brand-color-primary;
+            border: 2px solid $brand-color-white;
+        }
+        &:active {
+            color: $brand-color-white;
+            background-color: $brand-color-primary;
+            border: 2px solid $brand-color-white;
+        }
+        &.disabled {
+            color: $brand-color-white;
+            background-color: $brand-color-primary;
+            border: 2px solid $brand-color-white;
+            cursor: default;
+        }
+    }
+
+    &__disable{
+        color: $brand-color-white;
+        background: transparent;
+        border: 2px solid transparent;
+        &:hover,
+        &:focus {
+            color: $brand-color-white;
+            background: transparent;
+            border: 2px solid transparent;
+        }
+        &:active {
+            color: $brand-color-white;
+            background: transparent;
+            border: 2px solid transparent;
+        }
+        &.disabled {
+            color: $brand-color-white;
+            background: transparent;
+            border: 2px solid transparent;
+            cursor: default;
+        }
+    }
+}
+@media screen and (min-width: $screen-sm-min) {
+    .btn {
+        min-height: 45px;
+        padding: 8px 28px;
+        display: inline-block;
+        &__watch{
+            padding-left: 65px;
+        }
+    }
+}
+@media screen and (min-width: $screen-md-min) {
+    .btn {
+        &__watch{
+            padding-left: 75px;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+<div class="wrapper background__white">
+  <div class="wrapper wrapper__inner spacing--padding-top__xxxx-large spacing--padding-bottom__small">
+    <div id="faqs"  class="max--width__headline centered margin__default">
+      <h2 class="color__secondary font--family__primary font--h1__large">Frequently Asked Questions</h2>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper background__white spacing--padding-top__x-large spacing--padding-bottom__xx-large">
+    <div class="wrapper__inner ">
+      <div class="accordion accordion__white">
+        <div class="accordion__wrap accordion__wrap--opened spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small">What is the difference between Desktop and Web based?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>With both options, your data is stored securely on {{ if eq .Site.LanguageCode "en-GB" }}TM3 owned{{else}}Microsoft Azure{{end}} servers in {{ i18n "location" }}.
+            The difference is how you access it. With Desktop, the program is installed on your Windows PC or laptop. With web based, nothing is installed on your machines; you access the program through your web browser.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small">Do I need/can I have both Desktop and Web versions?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>It depends what you need for your clinic. You can have both, or use just one. By understanding your needs, we will determine which is the best solution for you. There is no difference in price.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small ">How does licensing work?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>TM3 licensing is based on the number of practitioner diaries required. Other users such as receptionists, administrators, book keepers and practice managers can use TM3 at no additional cost.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small ">Can I use TM3 on a Mac?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>Yes. TM3 works seamlessly on MacBooks, iPads and iMacs. From booking appointments to using clinical notes, TM3 excels on both Apple and Windows products.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small ">What is my initial contract length?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>TM3 contracts last 12 months. After the initial contract period it will become a rolling contract, however, so you can cancel with one month's notice.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small ">I am using a system already. Can I bring my patient data with me?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>Yes! TM3 has a dedicated team that migrates patient data from other systems on a day to day basis. Call us to discuss your options.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small ">Are my notes securely stored?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            {{if eq .Site.LanguageCode "en-GB" }}
+              <p>Yes, with TM3, all your information, including your clinical notes, are securely stored on Blue Zinc owned servers in the UK.
+               We have invested significantly in our data hosting system and use 3 ISO27001 certified data centres to ensure that your data is safe and secure.
+               As well as removing the headaches around backing up your data, our hosted system means that you can access your notes from anywhere that has a WiFi or 4G connection.</p>
+            {{ else }}
+              <p>Yes, with TM3, all of your information, including your clinical notes, are securely stored on Microsoft Azure servers in Australia.
+                The servers are ASD Certified Cloud Services List (CCSL), approved for storing sensitive government data, so you can be assured your data is safe and secure.
+                As well as removing the headaches around backing up your data, our hosted system means that you can access your notes from anywhere that has a WiFi or 4G connection.</p>
+            {{ end }}
+            </div>
+          </div>
+        </div>
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small ">Can you open multiple screens/windows at the same time?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>Yes, this is one of the features that helps make TM3 so easy to use.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small ">If I am using both desktop and web versions of TM3, will I be able to see the <p>
+            same information/is the data live?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>Yes, you are always working from one central database of information, so the data is exactly the same and is live.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__wrap accordion__wrap--closed spacing--padding-top__medium spacing--padding-bottom__small">
+          <div class="accordion__title background__white spacing--padding-bottom__small wrapper__border-bottom">
+            <h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-bottom__small ">Do I get a free evaluation/free trial?</h3>
+          </div>
+          <div class="accordion__content">
+            <div class="color__secondary font--family__primary font--copy__large max--width__copy">
+            <p>We used to offer free evaluations, however we found that clients preferred and benefitted from a free personal demonstration so that they could much better understand the functionality and how it would work for their clinic.
+            It also allows you to ask questions specific to your clinic and how you work.
+            A typical demo will only take around 45 minutes and at the end you will know if TM3 is the right system for you, which is much better than having a free evaluation period which will take you much longer and may not answer your specific questions.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>

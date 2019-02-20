@@ -1,0 +1,47 @@
+<form id="demo-form"  class="hide-me form__sidebar font--extra__medium spacing--padding-top__medium" action="#thank-you">
+    <div class="spacing--padding-bottom__medium">
+      <label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Full Name</label>
+      <input id="full-name" type="text" name="Name" placeholder="First and last name" required/>
+    </div>
+    <div class="spacing--padding-bottom__medium">
+      <label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Practice Name</label>
+      <input id="practice-name" type="text" name="Practice Name" placeholder="Practice name" required/>
+    </div>
+  <div class="spacing--padding-bottom__medium">
+      <label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Email Address</label>
+      <input id="email-address" type="email" name="Email" placeholder="Email address" required/>
+    </div>
+    <div class="spacing--padding-bottom__medium">
+      <label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Phone Number</label>
+      <input id="phone-number" type="text" name="Phone Number" placeholder="Phone number" required/>
+    </div>
+
+    <div class="spacing--padding-bottom__medium">
+      <label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">How many practitoners does your clinic have?</label>
+      <span id="practitioners-amount" class="select">
+        <select>
+          <option>Select Option</option>
+          <option>1</option>
+          <option>2-5</option>
+          <option>6-19</option>
+          <option>20+</option>
+        </select>
+      </span>
+    </div>
+    <div class="spacing--padding-bottom__medium">
+      <label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Discount Code</label>
+      <input id="discount-code" type="text" name="Discount Code" placeholder="Discount Code" required/>
+    </div>
+
+  <input id="submit-demo-button" type="submit" class="font--small btn btn__primary" value="Submit" />
+
+    </div>
+  <script type="text/javascript" language="javascript">
+    window.onload=function() {
+      document.getElementById("demo-form").onsubmit=function() {
+       window.location.replace("/tm3practitioners/confirm");
+        return false;
+       }
+      }
+  </script>
+</form>

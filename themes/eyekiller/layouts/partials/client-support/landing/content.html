@@ -1,0 +1,48 @@
+<body>
+	<div class="video-wrapper">
+		<div class="video-popup">
+			<div class="video-wrapper__close"></div>
+			<iframe frameborder='0' height='465px' width='470px' scrolling='no' src='' frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	{{ partial "navigation"  (dict "logo" "white") }}
+	<div class="wrapper wrapper__master">
+
+
+		<div class="wrapper wrapper__headline__medium" style="background-image:url('/images/header/client-support.jpg'); background-repeat:no-repeat; background-position: center center; background-size: cover;">
+			<div class="wrapper__headline__blue"></div>
+	        <div class="wrapper wrapper__inner centered__vertical ">
+	        	<div class="max--width__headline--top  centered margin__default">
+	        		<h1 class="color__white font--family__secondary font--h2__medium">Client Support</h1>
+	        		<p class="color__white font--family__primary font--strapline__medium">Our dedication to making sure your practice is using TM3 to its maximum capacity.</p>
+	        	</div>
+	        </div>
+	    </div>
+
+
+		<div class="wrapper background__white spacing--padding-top__xxx-large">
+		    <div class="wrapper__inner">
+		    	<div class="cols-2 wrapper spacing--padding-bottom__xxx-large">
+		    		<div class="cols-2__1">
+						<div class="wrapper wrapper__bordered wrapper__contain">
+							<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__x-small">Client Support Login</h2>
+							<p class="font--copy__medium color__tertiary spacing--padding-bottom__medium">Visit the client support login page and log in with your details to support for TM3 and TM2.</p>
+							{{ if eq .Site.LanguageCode "en-GB" }}
+							<a href="http://2gether.insidetm2.com/" title="" class="font--extra__small btn btn__tertiary">VISIT SUPPORT PORTAL</a>
+							{{ else }}
+							<a href="http://support.insidetm2.com.au/support/login" title="" class="font--extra__small btn btn__tertiary">VISIT SUPPORT PORTAL</a>
+							{{ end }}
+						</div>
+		    		</div><!--
+		    		--><div class="cols-2__1">
+		    			<h2 class="copy--h2__medium font--family__tertiary color__secondary  spacing--padding-bottom__medium">Experience a problem?<span class="spacing--padding-top__small display__block">Simply log in to our support portal</span></h2>
+		    			<ul class="list__ticked">
+	    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__small">You'll be in the hands of TM3 experts who are highly trained to deal with a range of problems</li>
+	    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__small">Our support staff are polite, friendly and patient and don't expect you to have detailed technical knowledge</li>
+	    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__small">With remote access they can view your system (with your permission) to enable a speedy resolution</li>
+	    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__small">They know your business and the industries you work in, so can answer questions regarding your billing or work processes</li>
+	    				<ul>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>

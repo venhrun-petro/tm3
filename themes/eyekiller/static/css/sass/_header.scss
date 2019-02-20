@@ -1,0 +1,445 @@
+/*  ==========================================================================
+    HEADER
+    ========================================================================== */
+header, .tool__nav{
+    width: 100%;
+    z-index: 9;
+    position: absolute;
+}
+header{
+	.icon__contact{
+		display: none;
+	}
+}
+.tool__nav{
+	display: none;
+}
+header{
+	top: 20px;
+}
+#logo{
+	display:inline-block;
+	&__white{
+		background-image: url($icons__logo);
+		background-repeat: no-repeat;
+		background-position:0 0;
+		height: 34px;
+		width: 130px;
+		background-size: 330px;
+	}
+	&__blue{
+		background-image: url($icons__logo);
+		background-repeat: no-repeat;
+		background-position: -200px 0;
+		height: 34px;
+		width: 130px;
+		background-size: 330px;
+	}
+}
+.header{
+	&__plain{
+		padding-top: 60px;
+	}
+	&__navigation{
+		text-align: right;
+		width: calc(100% - 130px);
+		nav{
+			a{
+				display: none;
+				&:hover{
+					color: $brand-color-primary;
+				}
+				&.responsive{
+					&__menu{
+						display: inline-block;
+						position: relative;
+						padding-left: 20px;
+						margin-top: -10px;
+						top: -10px;
+						&:before {
+			              content: "";
+			              background-image: url($icons__various);
+			              width: 15px;
+			              height: 15px;
+			              background-position: -58px -534px;
+			              top: 3px;
+			              left: 0;
+			              bottom: 0;
+			              right: 0;
+			              position: absolute;
+			            }
+					}
+					&__wrapper{
+						width: 100%;
+						max-width: 384px;
+						background: $brand-color-white;
+					}
+				}
+			}
+		}
+	}
+}
+.menu-popup{
+	width: 100%;
+	max-width: 384px;
+	background: $brand-color-white;
+	position: fixed;
+	top: 0;
+	right: -386px;
+	z-index: 99;
+	height: 100%;
+	opacity: 0;
+	height: 100%;
+		overflow-x: scroll;
+	@include transition(all .5s ease-in-out);
+	&--active{
+		opacity: 1;
+		right: 0;
+		@include transition(all .5s ease-in-out);
+	}
+	&__wrapper{
+		padding: 25px 25px;
+	}
+
+	&__close{
+		display: block;
+		text-align: right;
+		padding-bottom: 20px;
+		position: relative;
+		cursor: pointer;
+		&:before {
+			content: "";
+			background-image: url($icons__various);
+			width: 15px;
+			height: 15px;
+			background-position: -16px -535px;
+			top: 3px;
+			bottom: 0;
+			right: 93px;
+			position: absolute;
+		}
+	}
+}
+.permanent{
+	header{
+		position: relative;
+		border-bottom: 1px solid $brand-color-septenary;
+		background: $brand-color-white;
+	}
+	.header__navigation{
+		nav{
+			a{
+				color: $brand-color-secondary;
+				&:hover{
+					color: $brand-color-primary;
+				}
+				&.btn{
+					color: $brand-color-white;
+					border: 2px solid $brand-color-primary;
+					&:hover{
+						color: $brand-color-primary;
+						border: 2px solid $brand-color-primary;
+					}
+				}
+			}
+		}
+	}
+
+}
+.sticky, .sticky-dual{
+	.header{
+		&__plain{
+			padding-top: 160px;
+		}
+	}
+	#header{
+		background: $brand-color-white;
+		position: fixed;
+		top: 0;
+		padding: 10px 0;
+		@include transition(all 0.15s ease-in-out);
+		border-bottom: 1px solid $brand-color-septenary;
+		.bth{
+			display: inline-block;
+			width: 130px;
+			z-index: 10;
+		}
+		#logo{
+			display:inline-block;
+			&__white{
+				background-image: url($icons__logo);
+				background-repeat: no-repeat;
+				background-position:-200px 0;
+				height: 34px;
+				width: 130px;
+				background-size: 330px;
+			}
+			&__blue{
+				background-image: url($icons__logo);
+				background-repeat: no-repeat;
+				background-position:-200px 0;
+				height: 34px;
+				width: 130px;
+				background-size: 330px;
+			}
+		}
+		.header__navigation{
+			width: calc(100% - 130px);
+			text-align: right;
+			position: relative;
+			nav{
+				margin-top: -32px;
+				width: calc(100% - 2px);
+				a{
+					color: $brand-color-secondary;
+					&:hover{
+						color: $brand-color-primary;
+					}
+					&.responsive{
+						&__menu{
+							display: inline-block;
+							position: relative;
+							padding-left: 20px;
+							margin-top: 3px;
+							top: 0px;
+							&:before {
+				              content: "";
+				              background-image: url($icons__various);
+				              width: 15px;
+				              height: 15px;
+				              background-position: -216px -534px;
+				              top: 2px;
+				              left: 0;
+				              bottom: 0;
+				              right: 0;
+				              position: absolute;
+				            }
+						}
+					}
+					&.btn{
+						position: absolute;
+						right: 99px;
+						top: -40px;
+						color: $brand-color-white;
+						border: 2px solid $brand-color-primary;
+						&:hover{
+							color: $brand-color-primary;
+							border: 2px solid $brand-color-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $screen-sm-min) {
+
+	.menu-popup{
+
+		&__wrapper{
+			padding: 55px 40px;
+		}
+		&__close{
+			&:before {
+				top: 3px;
+				right: 103px;
+			}
+		}
+	}
+	header{
+		top: 26px;
+	}
+	#logo{
+		display:inline-block;
+		&__white{
+			background-image: url($icons__logo);
+			background-repeat: no-repeat;
+			background-position:0 0;
+			height: 49px;
+			width: 194px;
+			background-size: auto;
+		}
+		&__blue{
+			background-image: url($icons__logo);
+			background-repeat: no-repeat;
+			background-position:-306px 0;
+			height: 49px;
+			width: 200px;
+			background-size: auto;
+		}
+	}
+	.header{
+		padding: 0px 0;
+		&__navigation{
+			width: calc(100% - 200px);
+			nav{
+				a{
+					&.btn{
+						display: inline-block;
+					}
+					&.responsive{
+						&__menu{
+							display: inline-block;
+							position: relative;
+							padding-left: 20px;
+							top: 0;
+							&:before {
+				              content: "";
+				              background-image: url($icons__various);
+				              width: 15px;
+				              height: 15px;
+				              background-position: -58px -534px;
+				              top: 2px;
+				              left: 0;
+				              bottom: 0;
+				              right: 0;
+				              position: absolute;
+				            }
+						}
+						
+					}
+				}
+			}
+		}
+	}
+	.sticky, .sticky-dual{
+		#header{
+			padding: 20px 0;
+			.header__navigation{
+				width: calc(100% - 130px);
+				text-align: right;
+				position: relative;
+				nav{
+					margin-top: -32px;
+					width: calc(100% - 0px);
+					a{
+						color: $brand-color-secondary;
+						&:hover{
+							color: $brand-color-primary;
+						}
+						&.btn{
+							position: absolute;
+							right: 99px;
+							top: -40px;
+							color: $brand-color-white;
+							border: 2px solid $brand-color-primary;
+							&:hover{
+								color: $brand-color-primary;
+								border: 2px solid $brand-color-primary;
+							}
+						}
+						&.responsive{
+							&__menu{
+								display: inline-block;
+								position: relative;
+								padding-left: 20px;
+								margin-top: -10px;
+								top: 0px;
+								&:before {
+					              content: "";
+					              background-image: url($icons__various);
+					              width: 15px;
+					              height: 15px;
+					              background-position: -248px -534px;
+					              top: 2px;
+					              left: 0;
+					              bottom: 0;
+					              right: 0;
+					              position: absolute;
+					            }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $screen-md-min) {
+	.menu-popup{
+		display: none;
+	}
+	header{
+		top: 46px;
+		&.header__closed{
+			top: 26px;
+		}
+	}
+	.tool__nav{
+		display: block;
+	}
+	.header{
+		&__navigation{
+			nav{
+				a{
+					display: inline-block;
+					&.responsive{
+						&__menu{
+							display: none;
+						}
+					}
+				}
+
+			}
+		}
+	}
+	header{
+		.icon__contact{
+			display: inline-block;
+		}
+	}
+	.sticky, .sticky-dual{
+		
+		#header{
+			.header__navigation{
+				width: calc(100% - 130px);
+				text-align: center;
+				position: relative;
+				nav{
+					margin-top: -32px;
+					width: calc(100% - 130px);
+					a{
+						color: $brand-color-secondary;
+						&:hover{
+							color: $brand-color-primary;
+						}
+						&.btn{
+							position: absolute;
+							right: 0;
+							top: -40px;
+							color: $brand-color-white;
+							border: 2px solid $brand-color-primary;
+							&:hover{
+								color: $brand-color-primary;
+								border: 2px solid $brand-color-primary;
+							}
+						}
+						&.responsive{
+							&__menu{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		header{
+			&.header__closed{
+				width: 100%;
+				nav{
+					text-align: right;
+					width: 100%;
+				}
+				&#header{
+					.header__navigation{
+						width: calc(100% - 130px) ;
+						nav{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}	
+}

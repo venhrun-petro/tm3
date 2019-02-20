@@ -1,0 +1,57 @@
+<div class="wrapper wrapper__master header__plain">
+		<div class="wrapper background__white spacing--padding-top__x-large">
+		    <div class="wrapper__inner">
+		    	<div class="cols-2 wrapper spacing--padding-bottom__xxx-large">
+		    		<div class="cols-2__1">
+						<h1 class="color__secondary font--family__primary font--h2__medium">Book a Demo</h1>
+    					<p class="hide-me font--copy__medium color__tertiary">Fill in your details and we'll be in contact to arrange a suitable time for you to try out TM3.</p>
+    					<div id="thank-you" class="hidden">
+    						<br>
+    						<h2 > Thank you for your enquiry. We will be in touch soon. </h2>
+    					</div>
+
+						{{ if eq .Site.LanguageCode "en-GB" }}
+
+							{{ partial "forms/uk/demoform" . }}
+
+						{{ else }}
+
+							{{ partial "forms/au/demoform" . }}
+
+						{{ end }}
+
+	    		</div><!--
+	    		--><div class="cols-2__1">
+	    			<h2 class="font--copy__medium font--family__secondary color__tertiary spacing--padding-top__x-large spacing--padding-bottom__large">WHY CHOOSE TM3</h2>
+	    			<ul class="list__ticked">
+    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__medium">
+    						<h3 class="font--family__secondary color__secondary">The Complete Solution</h3>
+    						<p>TM3 is modern and intuitive private practice software that helps streamline your day, so you spend less time on administration and more time treating patients. From attracting new patients to your practice, to ensuring your clinical notes comply with industry regulations, TM3's got your back!</p>
+    					</li>
+    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__medium">
+    						<h3 class="font--family__secondary color__secondary">As Flexible As You</h3>
+    						<p>TM3's flexibility allows you to practice with freedom. Use TM3 anywhere, at anytime on multiple devices including iPads, laptops and iMacs. TM3 works around you and before you know it will be an extension of your treatments as well as the administrational backbone of your practice.</p>
+    					</li>
+    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__medium">
+    						<h3 class="font--family__secondary color__secondary">Safe Hands</h3>
+    						<p>You'll be in the hands of TM3 experts who are highly trained to deal with a range problems.</p>
+    					</li>
+    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__medium">
+    						<h3 class="font--family__secondary color__secondary">Beautifully Designed</h3>
+    						<p>Our world leading software design is based on extensive collaboration with practitioners across the {{ i18n "msk" }} sector, making it easy to use, and extremely clinically minded. </p>
+    					</li>
+    					<li class="color__tertiary font--family__primary font--copy__medium spacing--padding-bottom__medium">
+    						<h3 class="font--family__secondary color__secondary">Secure Software</h3>
+								<p>In a world where data security is more important than ever, TM3 can mitigate the dangers of theft and hardware failure in your clinic, with all data stored on TM3’s
+									{{ if eq .Site.LanguageCode "en-GB"}}
+									servers in the UK.
+									{{ else }}
+									ASD certified servers in Australia.
+									{{ end }}
+								</p>
+    					</li>
+    				<ul>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>

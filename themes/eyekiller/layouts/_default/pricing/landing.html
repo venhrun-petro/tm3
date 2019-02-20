@@ -1,0 +1,25 @@
+{{ partial "pricing/top.html" . }}
+
+{{ if eq .Site.LanguageCode "en-GB" }}
+
+  {{ partial "pricing/uk/overview.html" . }}
+
+  {{ partial "pricing/uk/addons.html" . }}
+
+  {{ partial "pricing/uk/payperclick.html" . }}
+
+{{ else }}
+
+  {{ partial "pricing/au/overview.html" . }}
+
+  {{ partial "pricing/au/addons.html" . }}
+
+  {{ partial "pricing/au/payperclick.html" . }}
+
+{{ end }}
+
+{{ partial "pricing/features.html" . }}
+
+{{ partial "pricing/faq.html" . }}
+
+{{ partial "pricing/bottom.html" . }}

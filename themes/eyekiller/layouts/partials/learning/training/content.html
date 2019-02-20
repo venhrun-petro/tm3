@@ -1,0 +1,102 @@
+<div class="wrapper background__white spacing--padding-top__large">
+	<div class="wrapper__inner">
+		<ul class="link__breadcrumbs">
+			<li class="display__inline display__inline color__secondary font--extra__small font--family__tertiary">LEARNING</li>
+			<span class="display__inline color__primary font--extra__small font--family__tertiary">|</span>
+			<li class="display__inline display__inline color__secondary font--extra__small font--family__tertiary">TRAINING</li>
+		</ul>
+	</div>
+</div>
+
+<div class="wrapper background__white spacing--padding-top__xxx-large">
+	<div class="wrapper__inner">
+		<div class="cols-3 wrapper spacing--padding-bottom__xxx-large">
+			<div class="cols-3__2">
+				<div class="color__secondary font--family__primary font--copy__large spacing--padding-bottom__large">
+					<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__x-small">Phone Training</h2>
+					<p>Too busy to attend a full day of group training? If you have an hour or two to spare, one of our TM3 Experts can log in to your computer remotely.
+					You can then tell them exactly what parts of TM3 you would like to master.</p>
+					<p>Phone training is available in 1 hour segments and if you purchase more than one, you can use them all together or spread them out - whatever suits you best.</p>
+				</div>
+				<div class="color__secondary font--family__primary font--copy__large spacing--padding-bottom__large">
+					<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__x-small">On-site Training</h2>
+					<p>TM3 can also offer training at your location, which means your whole team can be involved, and you can completely tailor it to your clinic's needs.</p>
+				</div>
+				<div class="color__secondary font--family__primary font--copy__large spacing--padding-bottom__large">
+					<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__x-small">Group Training</h2>
+					<p>Our classroom-style training courses are led by our
+					{{ if eq .Site.LanguageCode "en-GB" }}
+					clinical consultant Jeremy Allen and are held through out the UK and Ireland.
+					Group training courses run from 9.30am to 4.30pm and include lunch and refreshments throughout the day.
+					{{ else }}
+					TM3 expert trainers and offer small group personalised sessions. These are also a great opportunity to network and share ideas with others.
+					{{ end }}
+					</p>
+				</div>
+				<div class="color__secondary font--family__primary font--copy__large spacing--padding-bottom__large">
+					<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__x-small">E-Learning Courses</h2>
+					<p>Take advantage of free, online, instructor-led training and self-paced online courses, as well as access to an extensive knowledge base.
+					These resources  will provide you  with the required skills to help improve the management of your patients and clinic.</p>
+					<p>Our free online courses are perfect if you need some help in getting to grips with TM3 and understanding how it works, or if you want to get staff up and running with a section  that is applicable to their role.
+					Go through each stage at your own pace with our resident TM3 guru Jeremy Allen guiding you through every step of the way.</p>
+				</div>
+				<div class="color__secondary font--family__primary font--copy__large spacing--padding-bottom__large">
+					<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__x-small">Webinars</h2>
+					<p>If you want to become an expert in all things TM3 related, but do not want to leave the comfort of your practice, then TM3 webinars are the answer.
+					TM3 webinars educate clients 3 times per week and allow clients a classroom environment and a great platform for interaction.</p>
+					<p>Interested in watching one of our webinars? Book your virtual seat by logging into our 2gether portal.</p>
+					<a href="http://2gether.insidetm2.com" title="" class="font--family__tertiary color__primary font--extra__small spacing--padding-bottom__small">LOGIN TO BOOK</a>
+				</div>
+				<div class="color__secondary font--family__primary font--copy__large spacing--padding-bottom__large">
+					<h2 class="font--family__primary font--h2__medium color__secondary spacing--padding-bottom__x-small">Knowledge Base</h2>
+					<p>The 2gether knowledge base is packed full of FAQs and is your how-to guide for TM2 and TM3!</p>
+				</div>
+			</div><!--
+			--><div class="cols-3__1">
+				<div class="cols-1 spacing--padding-bottom__medium font--family__primary">
+					<h3 class="color__secondary font--family__tertiary font--h3__medium spacing--padding-top__medium">Book Training Session</h3>
+					<p class="hide-me font--copy__medium color__tertiary">Interested in booking a training session? Simply send us your details and training preference and we'll be in touch to arrange a session for you</p>
+					<div id="thank-you" class="hidden">
+							<br>
+							<h2 > Thank you for your enquiry. We will be in touch soon. </h2>
+						</div>
+					<form id="training-form" class="hide-me form__sidebar font--extra__medium spacing--padding-top__medium">
+						<div class="spacing--padding-bottom__medium">
+							<label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Full Name</label>
+							<input id="full-name" type="text" name="Name" placeholder="Your First and Last Name" required/>
+						</div>
+						<div class="spacing--padding-bottom__medium">
+							<label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Practice Name</label>
+							<input id="practice-name" type="text" name="Practice Name" placeholder="Your Practice's Name" required />
+						</div>
+					<div class="spacing--padding-bottom__medium">
+							<label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Email Address</label>
+							<input id="email-address" type="email" name="Email" placeholder="Your Email Address" required />
+						</div>
+						<div class="spacing--padding-bottom__medium">
+							<label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Phone Number</label>
+							<input id="phone-number" type="text" name="Phone Number" placeholder="Your Phone Number" required/>
+						</div>
+						<div class="spacing--padding-bottom__medium">
+							<label class="font--family__secondary color__secondary font--extra__medium  spacing--padding-bottom__small">Preferred Training Type</label>
+							<span class="select">
+								<select id="training-type" required>
+									<option>Select training</option>
+									<option>Phone Training</option>
+									<option>On-site Training</option>
+									<option>Group Training</option>
+									<option>E-Learning Courses</option>
+									<option>Webinars</option>
+								</select>
+							</span>
+						</div>
+						<div class="">
+							<input id="submit-training-button" type="submit" class="font--extra__small btn btn__primary" value="REQUEST TRAINING" />
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

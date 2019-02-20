@@ -1,0 +1,14 @@
+<div class="wrapper background__white spacing--padding-top__xxx-large">
+		<div class="wrapper wrapper__inner ">
+			<div class="wrapper">
+				<div class="cols-3 cols-2 spacing--padding-bottom__xxx-large"><!--
+				-->{{ range .Site.Sections.articles }}<div class="cols-3__1 cols-3__1-2 spacing--padding-bottom__xx-large">
+						<div class=""><a href="/{{ .URL }}" title=""><img src="{{ .Params.thumbnail }}" alt="TM3 Clients" /></a></div>
+						<a href="/{{ .URL }}" title=""><h3 class="color__secondary font--family__tertiary font--h3__small spacing--padding-top__medium">{{ .Params.fullname }}, {{ .Params.occupation }} </h3></a>
+					<p class="color__tertiary font--family__primary font--copy__medium">{{ .Params.blurb}}</p>
+					<a href="/{{ .URL }}" title="" class="color__primary font--family__tertiary font--extra__small link__underline__primary__thick--hover">READ {{ .Params.forename | upper}}'S STORY</a>
+				</div>{{ end }}<!--
+				--></div>
+			</div>
+		</div>
+</div>

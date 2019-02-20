@@ -1,0 +1,8 @@
+languageCode = "en-GB"
+title = "TM3"
+theme = "eyekiller"
+baseurl = "/"
+relativeURLs = "yes"
+
+#[languages]
+#[languages.en-GB]

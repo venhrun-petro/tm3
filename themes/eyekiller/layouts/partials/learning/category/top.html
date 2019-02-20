@@ -1,0 +1,19 @@
+{{ partial "head" . }}
+<body class="permanent">
+<div class="video-wrapper">
+		<div class="video-popup">
+			<div class="video-wrapper__close"></div>
+			<iframe frameborder='0' height='465px' width='470px' scrolling='no' src='' frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	{{ partial "navigation"  (dict "logo" "blue") }}
+
+	<div class="wrapper wrapper__master header__plain">
+
+	   <div class="wrapper background__white spacing--padding-top__large">
+		    <div class="wrapper__inner">
+		    	<ul class="link__breadcrumbs">
+		    		<li class="display__inline "><a href="/learning/" title="" class="display__inline color__secondary font--extra__small font--family__tertiary">LEARNING</a></li><span class="display__inline color__primary font--extra__small font--family__tertiary">|</span><li class="display__inline "><a href="/learning/inside-tm3-blog/" title="" class="display__inline color__secondary font--extra__small font--family__tertiary">INSIDE TM3 BLOG</a></li><span class="display__inline color__primary font--extra__small font--family__tertiary">|</span><li class="display__inline display__inline color__secondary font--extra__small font--family__tertiary">CATEGORY: {{ replace .URL "learning/inside-tm3-blog/category/" "" | upper}}</a></li>
+		    	</ul>
+		    </div>
+		</div>

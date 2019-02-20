@@ -1,0 +1,53 @@
+<div class="wrapper background__white">
+			<div class="wrapper wrapper__inner spacing--padding-top__large spacing--padding-bottom__large">
+				<div class="cols-6 wrapper spacing--padding-top__x-large spacing--padding-bottom__x-large">
+					<div class="cols-6__2">
+						<h2 class="font--family__primary font--h2__medium color__secondary">Get in touch with our sales team</h2>
+					</div><!--
+					--><div class="cols-6__4">
+						<ul class="icon__contact">
+							<li class="icon__contact__phone spacing--padding-top__medium">
+								<span class="display__block font--family__tertiary font--h3__small color__secondary">Call Us</span>
+								<a href="{{ i18n "tel" | safeURL }}" class="font--family__secondary font--h3__small color__secondary">{{ i18n "phone" }}</a>
+							</li>
+							<li class="icon__contact__email spacing--padding-top__medium">
+								<span class="display__block font--family__tertiary font--h3__small color__secondary">Email Us</span>
+								<a href={{ i18n "salesmailto" | safeHTMLAttr }} title="" class="font--family__secondary font--h3__small color__secondary">{{ i18n "salesemail" }}</a>
+							</li>
+							{{ if eq .Site.LanguageCode "en-GB" }}
+							<li class="icon__contact__chat spacing--padding-top__medium">
+								<span class="display__block font--family__tertiary font--h3__small color__secondary">Chat With Us</span>
+								<a href="" onclick='return false;' id="open-sales-live-chat" title="" class=" font--family__secondary font--h3__small color__secondary">Open live chat</a>
+							</li>
+							{{ else }}
+							{{ end }}
+						</ul>
+					</div>
+				</div>
+				<div class="wrapper"><div class="wrapper__border-bottom"></div></div>
+				<div class="cols-6 wrapper spacing--padding-top__x-large spacing--padding-bottom__x-large">
+					<div class="cols-6__2">
+						<h2 class="font--family__primary font--h2__medium color__secondary">Contact our support team</h2>
+					</div><!--
+					--><div class="cols-6__4">
+						<ul class="icon__contact">
+							<li class="icon__contact__phone spacing--padding-top__medium">
+								<span class="display__block font--family__tertiary font--h3__small color__secondary">Call Us</span>
+								<a href="{{ i18n "supporttel" | safeURL }}" class="font--family__secondary font--h3__small color__secondary">{{ i18n "supportphone" }}</a>
+							</li>
+							<li class="icon__contact__email spacing--padding-top__medium">
+								<span class="display__block font--family__tertiary font--h3__small color__secondary">Email Us</span>
+								<a href={{ i18n "supportmailto" | safeHTMLAttr }} title="" class="font--family__secondary font--h3__small color__secondary">{{ i18n "supportemail" }}</a>
+							</li>
+							{{ if eq .Site.LanguageCode "en-GB" }}
+							<li class="icon__contact__chat spacing--padding-top__medium">
+								<span class="display__block font--family__tertiary font--h3__small color__secondary">Chat with Us</span>
+								<a href="" onclick='return false;' id="open-support-live-chat" title="" class="font--family__secondary font--h3__small color__secondary">Open live chat</a>
+							</li>
+							{{ else }}
+							{{ end }}
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>

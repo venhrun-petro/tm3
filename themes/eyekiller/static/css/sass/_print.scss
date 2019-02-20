@@ -1,0 +1,44 @@
+/*  ==========================================================================
+    PRINT
+    ==========================================================================  */
+@media print {
+    html body #main {
+       background: none;
+    }
+    body {
+        font: 10pt Arial, Helvetica, sans-serif;
+        color: #000;
+        background: #fff;
+    }
+    a:link, a:visited {
+        color: #000;
+        background: transparent;
+        text-decoration: none;
+        border-bottom: #b4b4b4 1px solid;
+    }
+    .print-hide
+    {
+        display: none;
+    }
+    .page-break
+    {
+        display: block;
+        page-break-before: always;
+    }
+    h1 {
+        font-size: 18pt;
+    }
+    h2 {
+        font-size: 16pt;
+    }
+    h3 {
+        font-size: 14pt;
+    }
+    h4 {
+        font-size: 12pt;
+    }
+    .logo {
+        font-size: 20pt;
+        font-weight: bold;
+    }
+}

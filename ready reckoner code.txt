@@ -1,0 +1,77 @@
+<!--
+		        	--><div class="cols-x-spec__1">
+		        		<a href="#customised-pricing" title="" class="display__block color__secondary font--family__tertiary font--extra__small spacing--padding-top__medium spacing--padding-bottom__medium">CALCULATE YOUR PRICING</a>
+		        	</div>
+
+
+
+<div class="wrapper background__senary">
+	        <div class="wrapper wrapper__inner spacing--padding-top__xxxx-large spacing--padding-bottom__x-large">
+	        	<div id="customised-pricing" class="max--width__headline centered margin__default">
+	        		<h2 class="color__secondary font--family__primary font--h2__medium">Customise Your Pricing</h2>
+	        		<p class="color__tertiary font--family__primary font--copy__medium">TM3 has the flexibility to allow you to tailor your package to meet the needs of your clinic and only pay for what you use. Pricing is based on monthly cost per practitioner diary - administration, reception, and other staff can use the software completely free.</p>
+	        	</div>
+	        </div>
+	    </div>
+
+		<div class="wrapper background__senary spacing--padding-bottom__xxxx-large">
+		    <div class="wrapper__inner">
+		    	<div class="wrapper wrapper__bordered background__white">
+		    		<div id="calc-form" class="cols-3">
+		    			<div class="cols-3__2">
+		    				<div class="wrapper wrapper__contain centered">
+		    					<h3 class="color__secondary font--h3__medium font--family__tertiary spacing--padding-bottom__medium">How many full-time Practitioner Diaries will you need?*</h3>
+		    					<span class="select__dual-wrap">
+			    					<select class="reckoner select__dual">
+			    						<option value="1">1</option>
+			    						<option value="2">2</option>
+			    						<option value="3">3</option>
+			    						<option value="4">4</option>
+			    						<option value="5">5</option>
+			    						<option value="6">6</option>
+			    						<option value="7">7</option>
+			    						<option value="8">8</option>
+			    						<option value="9">9</option>
+			    						<option value="10">10</option>
+			    					</select>
+			    				</span>
+		    					<h3 class="color__secondary font--h3__medium font--family__tertiary spacing--padding-top__large spacing--padding-bottom__small">Would you like any of the following add-ons?</h3>
+		    					<label id="config-multi-location" class="reckoner check__button-text spacing--margin-top__small">
+		    						Multi-location
+		    						<input type="checkbox" for="config-multi-location" value="multi-location-approved" name="config-multi-location" class="calc--checkbox"/>
+		    					</label>
+		    					<label id="config-online-bookings" class="reckoner check__button-text spacing--margin-top__small">
+		    						Online Bookings
+		    						<input  type="checkbox" for="config-online-bookings" value="online-bookings-approved" name="config-online-bookings" class="calc--checkbox"/>
+		    					</label>
+		    					<label id="config-room-manager" class="reckoner check__button-text spacing--margin-top__small">
+		    						Room Manager
+		    						<input  type="checkbox" for="config-room-manager" value="room-manager-approved" name="config-room-manager" class="calc--checkbox"/>
+		    					</label>
+		    					<h3 class="color__secondary font--h3__medium font--family__tertiary spacing--padding-top__large spacing--padding-bottom__small">Are you a member of PhysioFirst or the Royal College of Chiropractors? (Earn 10% discount)</h3>
+		    					<label id="config-physiofirst" class="reckoner check__button-text spacing--margin-top__small">
+		    						PhysioFirst
+		    						<input data-price="discount-active" type="checkbox" for="config-physiofirst" value="physiofirst-approved" name="config-physiofirst" class="calc--checkbox"/>
+		    					</label>
+		    					<label id="config-rcc" class="reckoner check__button-text spacing--margin-top__small">
+		    						RCC
+		    						<input data-price="discount-active" type="checkbox" for="config-rcc" value="rcc-approved" name="config-rcc" class="calc--checkbox"/>
+		    					</label>
+		    					<br><p class="spacing--padding-top__small spacing--padding-bottom__small font--copy__medium font--family__secondary color__secondary"><span class="font--family__quaternary color__primary">*Part-time practitioners will be charged at a reduced rate.</span> <br>If you would like a quote for over 10 practitioner diaries it is advised that you talk to a TM3 representative directly.</p></br></br>
+		    				</div>
+		    			</div><!--
+		    			--><div class="cols-3__1 background__quaternary centered spacing--padding-bottom__large">
+		    				<div class="wrapper wrapper__contain--secondary">
+		    					<h3 class="spacing--padding-top__small color__white font--family__tertiary font--strapline__large spacing--padding-top__large">Your Total price</h3>
+		    					<span class="display__block color__primary font--family__quaternary font--extra__xx-large">£<span class="finalchargeoutput">74</span></span>
+		    					<span class="display__block color__white font--family__secondary font--strapline__medium">per month</span>
+		    					<span class="spacing--padding-top__xx-large display__block color__white font--family__tertiary font--strapline__large">£<span class="applydiscountoutput">61.70</span> ex. VAT</span>
+		    					<span class="spacing--padding-bottom__xx-large display__block color__octonary font--family__primary font--h3__medium">&euro;<span class="euroconvoutput">78.10</span> per month ex. VAT</span>
+		    					<a href="/book-a-demo/" title="" class="font--extra__small btn btn__primary">BOOK A DEMO</a>
+
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>

@@ -1,0 +1,25 @@
+/* =============================================================================
+   NO SVG SUPPORT
+   ========================================================================== */
+.no-svg {
+	.logo {
+	    background-image: url(../images/sprite.png);
+	    background-repeat: no-repeat;
+	    text-indent: -9999px;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min--moz-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 4 / 2),
+(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .no-svg {
+    	.logo {
+	        background-image: url(../images/sprite@2x.png);
+	        background-size: 100px 1400px;
+        }
+    }
+}
+

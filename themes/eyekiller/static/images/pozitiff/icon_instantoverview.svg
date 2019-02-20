@@ -1,0 +1,33 @@
+<svg id="icon_instantoverview" xmlns="http://www.w3.org/2000/svg" width="90" height="86" viewBox="0 0 90 86">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #3295d8;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Path_5717" data-name="Path 5717" class="cls-1" d="M5.7,0H84.3A5.7,5.7,0,0,1,90,5.7v56a5.722,5.722,0,0,1-5.7,5.7H5.7A5.7,5.7,0,0,1,0,61.708V5.7A5.722,5.722,0,0,1,5.7,0ZM84.3,3H5.7a2.7,2.7,0,0,0-1.906.8A2.65,2.65,0,0,0,3,5.7v56a2.735,2.735,0,0,0,.789,1.908A2.687,2.687,0,0,0,5.7,64.4H84.3a2.73,2.73,0,0,0,2.7-2.707V5.7a2.735,2.735,0,0,0-.789-1.908A2.774,2.774,0,0,0,84.3,3Z"/>
+  <path id="Path_5718" data-name="Path 5718" class="cls-1" d="M1.46,45.5H88.54v5.85H1.46Z" transform="translate(0 0.974)"/>
+  <path id="Path_5719" data-name="Path 5719" class="cls-1" d="M41.02,39.93H63.95v2.93H41.02Z" transform="translate(1.365 0.824)"/>
+  <path id="Path_5720" data-name="Path 5720" class="cls-1" d="M41.02,23.54H63.95v2.92H41.02Z" transform="translate(1.365 0.486)"/>
+  <path id="Path_5721" data-name="Path 5721" class="cls-1" d="M22.07,81.4h43.7v2.92H22.07Z" transform="translate(1.08 1.68)"/>
+  <path id="Path_5722" data-name="Path 5722" class="cls-1" d="M26.41,75.54H61.43v2.93H26.41Z" transform="translate(1.08 1.68)"/>
+  <path id="Path_5723" data-name="Path 5723" class="cls-1" d="M26.41,82.86V77h2.93v5.86Z" transform="translate(0.672 1.68)"/>
+  <path id="Path_5724" data-name="Path 5724" class="cls-1" d="M58.5,82.86V77h2.93v5.86Z" transform="translate(1.488 1.68)"/>
+  <path id="Path_5725" data-name="Path 5725" class="cls-1" d="M31.77,76.41V64.27H34.7V76.41Z" transform="translate(0.808 1.68)"/>
+  <path id="Path_5726" data-name="Path 5726" class="cls-1" d="M53.15,76.41V64.27h2.93V76.41Z" transform="translate(1.352 1.68)"/>
+  <path id="Path_5727" data-name="Path 5727" class="cls-1" d="M8.4,6.67H83.11V48.72H6.89V6.67ZM80.095,9.6H9.905V45.79H80.095V9.6Z"/>
+  <path id="Path_5728" data-name="Path 5728" class="cls-1" d="M25.39,29.04H37.75V42.86H23.93V29.04Zm9.43,2.93H26.86v7.96h7.96V31.97Z" transform="translate(0.698 0.692)"/>
+  <path id="Path_5729" data-name="Path 5729" class="cls-1" d="M25.39,12.64H37.75V26.46H23.93V12.64Zm9.43,2.93H26.86v7.96h7.96V15.57Z" transform="translate(0.698)"/>
+  <path id="Path_5730" data-name="Path 5730" class="cls-2" d="M13.68,12.64h3.99v4H13.68Z" transform="translate(0.352)"/>
+  <path id="Path_5731" data-name="Path 5731" class="cls-2" d="M41.02,12.64h3.99v4H41.02Z" transform="translate(1.057)"/>
+  <path id="Path_5732" data-name="Path 5732" class="cls-2" d="M38.41,55.32H42.4v3.99H38.41Z" transform="translate(0.989 1.157)"/>
+  <path id="Path_5733" data-name="Path 5733" class="cls-2" d="M45.44,55.32h3.99v3.99H45.44Z" transform="translate(1.171 1.157)"/>
+  <path id="Path_5734" data-name="Path 5734" class="cls-2" d="M41.02,29.04h3.99v3.99H41.02Z" transform="translate(1.057 0.607)"/>
+  <path id="Path_5735" data-name="Path 5735" class="cls-2" d="M48.06,12.64h3.99v4H48.06Z" transform="translate(1.238)"/>
+  <path id="Path_5736" data-name="Path 5736" class="cls-2" d="M48.06,29.04h3.99v3.99H48.06Z" transform="translate(1.238 0.607)"/>
+</svg>
